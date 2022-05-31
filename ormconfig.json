@@ -1,0 +1,10 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "postgres",
+  "password": "l7u7a7n7",
+  "database": "elt",
+  "entities": ["./src/modules/**/infra/typeorm/entities/*.ts"],
+  "autoSchemaSync": true
+}

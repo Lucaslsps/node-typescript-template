@@ -1,0 +1,37 @@
+{
+  "name": "node-typescript-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "yarn tsc && node ./dist/server.js",
+    "dev:server": "ts-node-dev -r tsconfig-paths/register --transpile-only --ignore-watch node_modules src/shared/infra/http/server.ts"
+  },
+  "author": "Luan",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "4.17.13",
+    "@types/node": "17.0.16",
+    "axios": "0.25.0",
+    "celebrate": "^15.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "16.0.0",
+    "express": "4.18.1",
+    "express-async-errors": "^3.1.1",
+    "helmet": "5.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.7.3",
+    "tsyringe": "^4.7.0",
+    "typeorm": "0.2.24",
+    "typescript": "4.3.5",
+    "yarn": "1.22.17"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/jsonwebtoken": "^8.5.8",
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.0.0",
+    "typescript": "4.3.5"
+  }
+}
